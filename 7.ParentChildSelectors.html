@@ -1,0 +1,31 @@
+<html>
+<head>
+        <title>Hello World</title>
+        <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+</head>
+
+<body>
+	<div id="divTestArea1">
+        <b>Bold text</b>
+        <i>Italic text</i>
+        <div id="divTestArea2">
+                <b>Bold text 2</b>
+                <i>Italic text 2</i>
+                <div>
+                        <b>Bold text 3</b>
+                </div>
+        </div>
+	</div>
+
+	<script type="text/javascript">
+	$(function(){
+		//$("#divTestArea1 > b").css("color", "blue");
+		//$("#divTestArea1 b").css("color", "blue");
+		$("#divTestArea2 b").css("color", "blue");
+	})
+	
+</script>
+
+</body>
+
+</html>

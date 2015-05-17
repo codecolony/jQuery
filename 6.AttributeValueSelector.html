@@ -1,0 +1,34 @@
+<html>
+<head>
+        <title>Hello World</title>
+        <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+</head>
+
+<body>
+	<a href="http://www.google.com" target="_blank">Link 1</a><br />
+	<a href="http://www.google.com" target="_self">Link 2</a><br />
+	<a href="http://www.google.com" target="_blank">Link 3</a><br />
+
+	<script type="text/javascript">
+	//$("a[target='_blank']").append(" [new window]");
+
+	//exclude selection using the following operator
+	$(function(){
+		//$("a[target!='_blank']").append(" [new window]");
+
+		//Find elements with a value which starts with a specific string using the ^= operator:
+		//$("a[target^='_bla']").css("color", "red");
+
+		//Find elements with a value which ends with a specific string using the $= operator:
+		//$("a[target$='lf']").css("color", "red");
+
+		//Find elements with a value which contains a specific word:
+		$("a[target*='k']").css("color", "red");
+
+	});
+	
+	</script>
+
+</body>
+
+</html>

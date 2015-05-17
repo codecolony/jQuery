@@ -1,0 +1,33 @@
+<html>
+<head>
+        <title>Hello World</title>
+        <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+</head>
+
+<body>
+	<div id="divTestArea1" style="padding: 50px; background-color: #89BC38; text-align: center; display: none;">
+        <b>Hello, world!</b>
+	</div>
+	<a href="javascript:void(0);" onclick="ShowBox();">Show box</a>
+	<script type="text/javascript">
+	function ShowBox()
+	{
+	        //$("#divTestArea1").slideDown();
+	        //$("#divTestArea1").slideDown("fast");
+	        //$("#divTestArea1").slideDown("slow");
+	        //$("#divTestArea1").slideDown(2000);
+
+	     // $("#divTestArea1").slideDown(2000, function()
+      //   {
+      //           $("#divTestArea1").slideUp(3000);
+      //   });
+
+ 			$("#divTestArea1").slideToggle("slow", function(){
+ 				$("#divTestArea1").slideToggle("slow");
+ 			}); 
+	}
+	</script>
+
+</body>
+
+</html>
